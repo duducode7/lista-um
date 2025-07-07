@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       
         $somaDivisoresNumero = somaDivisores($numero);
-
+ 
         if ($somaDivisoresNumero == $numero) {
             echo "<p>O número $numero é perfeito!</p>";
         } else {
