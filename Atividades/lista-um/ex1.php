@@ -14,32 +14,28 @@
     <title>Informe Número Primo</title>
 </head>
 <body>
+
+    <h1>Calcular Tabuada
     
     <form method="POST" action="">
-        <label for="numero_par">Verifica se é um número par ou impar:</label>
-        <input type="number" id="numero_par" name="numero_par" required>
-        <button type="submit" name="verificar_par">Verificar</button>
+        <label for="tabuada">Escolha um número para calcular a tabuada:</label>
+        <input type="number" id="tabuada" name="tabuada" required>
+        <button type="submit" name="verificar_tabuada">Verificar</button>
     </form>
 
-    <?php
-    function verificarPar($numero){
-        if($numero %2 == 0) {
-            return "O número $numero é par";
-        }else{
-            return "O número $numero é impar";
-        }
-    };
+    
+
+</body>
+</html>
+<?php
 
      if($_SERVER['REQUEST_METHOD'] == 'POST') {
-         if(isset($_POST['verificar_par'])) {
-            $numero = $_POST['numero_par'];
-            $ehPrimo = true;
-            echo verificarPar($numero);
+         if(isset($_POST['verificar_tabuada'])) {
+            $numero = $_POST['tabuada'];
+            for ($i=1; $i<=10;$i++){
+                $resultado = $numero * $i;
+                echo "$numero * $i = $resultado <br>";
+            }
          };
     }; 
     ?>
-
-</body>
-</html>
-</body>
-</html>
