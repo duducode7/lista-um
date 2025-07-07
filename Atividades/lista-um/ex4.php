@@ -30,7 +30,7 @@
 
             return $fatorial;
             
-         };
+         }
          echo "O fatorial do $numero é: ".loopFatorial($numero)."\n";
     }; 
 ?>
