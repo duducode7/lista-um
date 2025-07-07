@@ -12,10 +12,8 @@
     <form method="POST">
         <label for="numero1">Número 1:</label>
         <input type="number" name="numero1" required>
-        
         <label for="numero2">Número 2:</label>
         <input type="number" name="numero2" required>
-        
         <input type="submit" value="Verificar">
     </form>
 </body>
