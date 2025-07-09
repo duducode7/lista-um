@@ -10,8 +10,8 @@
     
 
     <form method="POST">
-        <label for="numero1">Número 1:</label>
-        <input type="number" name="numero1" required>
+        <label for="primeiro">Número 1:</label>
+        <input type="number" name="primeiro" required>
         <label for="numero2">Número 2:</label>
         <input type="number" name="numero2" required>
         <input type="submit" value="Verificar">
@@ -22,7 +22,7 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Lê os dados usando $_POST
-        $numero1 = $_POST['numero1'];
+        $primeiro = $_POST['primeiro'];
         $numero2 = $_POST['numero2'];
 
 
@@ -38,14 +38,14 @@
         }
 
    
-        $soma1 = somaDivisores($numero1);
+        $soma1 = somaDivisores($primeiro);
         $soma2 = somaDivisores($numero2);
 
   
-        if ($soma1 == $numero2 && $soma2 == $numero1) {
-            echo "<p>Os números $numero1 e $numero2 são amigos!</p>";
+        if ($soma1 == $numero2 && $soma2 == $primeiro) {
+            echo "<p>Os números $primeiro e $numero2 são amigos!</p>";
         } else {
-            echo "<p>Os números $numero1 e $numero2 não são amigos.</p>";
+            echo "<p>Os números $primeiro e $numero2 não são amigos.</p>";
         }
     }
     ?>
