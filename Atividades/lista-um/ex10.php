@@ -12,7 +12,8 @@
     <input type="number" name="numero" required> 
     <input type="submit" name="verificar_numero" value="Verificar"> 
 </form>
-
+</body>
+</html>
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['verificar_numero'])) {
@@ -35,5 +36,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-</body>
-</html>
