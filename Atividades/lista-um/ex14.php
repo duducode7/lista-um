@@ -13,7 +13,8 @@
         <input type="number" name="ano" required>
         <input type="submit" name="Verificar_ano" value="Verificar">
     </form>
-
+</body>
+</html>
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (isset($_POST['Verificar_ano'])) {
@@ -30,5 +31,3 @@
     }
     ?>
 
-</body>
-</html>

@@ -30,7 +30,7 @@
                 }
             }
 
-            echo "<h2>A quantidade de vogais na palavra $palavra é: $quantidade_vogais</h2>";
+            echo "<p>A quantidade de vogais na palavra $palavra é: $quantidade_vogais</p>";
         }
     }
 ?>

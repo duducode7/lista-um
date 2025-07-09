@@ -24,9 +24,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
      
         if (strcasecmp($palavra, $palavra_invertida) == 0) { 
-            echo "<h2>\"$palavra\" é um palíndromo!</h2>";
+            echo "<p>\"$palavra\" é um palíndromo!</p>";
         } else {
-            echo "<h2>\"$palavra\" não é um palíndromo.</h2>";
+            echo "<p>\"$palavra\" não é um palíndromo.</p>";
         }
     }
 }

@@ -34,7 +34,7 @@
   
             $resultado = Verificar_temp($temp);
 
-            echo "<h2>A temperatura em Fahrenheit é: $resultado °F</h2>";
+            echo "<p>A temperatura em Fahrenheit é: $resultado °F</p>";
         }
     }
     ?>

@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $fibonacci[] = $proximo; 
         }
 
-        echo "<h2>Sequência de Fibonacci até $numero:</h2>";
+        echo "<p>Sequência de Fibonacci até $numero:</p>";
         echo implode(", ", $fibonacci); 
     }
 }
