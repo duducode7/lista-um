@@ -13,8 +13,9 @@
         <input type="text" name="palavra" required>
         <input type="submit" name="Verificar_string" value="Verificar">
     </form>
-
-    <?php
+</body>
+</html>
+<?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {       
         if (isset($_POST['Verificar_string'])) {
             $palavra = $_POST['palavra'];
@@ -32,7 +33,5 @@
             echo "<h2>A quantidade de vogais na palavra $palavra é: $quantidade_vogais</h2>";
         }
     }
-    ?>
+?>
 
-</body>
-</html>
