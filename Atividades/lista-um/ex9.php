@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
 
 
-        echo "<p>Existem $contador </p>";
+        echo "<p>O soma dos numeros é $contador </p>";
     }
 }
 ?>
