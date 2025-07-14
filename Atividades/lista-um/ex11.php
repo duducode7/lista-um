@@ -20,10 +20,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['verificar_palavra'])) { 
 
         $palavra = $_POST['palavra']; 
-        $palavra_invertida = strrev($palavra); 
+        $palavra_invertida = strrev($palavra); // strrev=inverte uma string
 
      
-        if (strcasecmp($palavra, $palavra_invertida) == 0) { 
+        if (strcasecmp($palavra, $palavra_invertida) == 0) {  // strcasecmp = compara duas strings
             echo "<p>\"$palavra\" é um palíndromo!</p>";
         } else {
             echo "<p>\"$palavra\" não é um palíndromo.</p>";
