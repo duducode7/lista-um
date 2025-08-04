@@ -1,17 +1,13 @@
 <?php
-
-include 'db.php';
-
-$id = $_GET['id'];
-
-$sql = "DELETE FROM usuario WHERE id=$id";
-
-if ($conn->query($sql) == true) {
-        echo "<br>";
-        echo "Novo Registro no Banco!";
-    } else {
-        echo "Erro: " . $sql . "<br>" . $conn->$error;
-    };
+    include 'db.php';
+    $id = $_GET['id'];
+    $sql ="DELETE FROM user WHERE id=$id";
+    if($conn ->query($sql) === true){
+        echo "Registro excluído com sucesso.";
+    }else{
+        echo "Erro" . $sql . "<br>" . $conn->error;
+    }
     $conn -> close();
-    header("Location: create.php")
+    header("Location: read.php");
+    exit();
 ?>
